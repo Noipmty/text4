@@ -17,7 +17,7 @@ public class TaxCalculatorServlet extends HttpServlet {
         if (incomeStr != null) {
             double income = Double.parseDouble(incomeStr);
             tax = new IncomeTaxCalculator().calculateIncomeTax(income);
-            response.setContentType("text/html;charset=UTF-8");
+            response.setContentType("text/plain");
             response.getWriter().println("Tax: " + tax);
         } else {
             response.getWriter().println("Please enter a valid income amount.");
