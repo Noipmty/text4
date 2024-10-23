@@ -1,6 +1,6 @@
 <template>
   <div class="weather-report">
-    <h1>天气预报</h1>
+    <h1>天气查百到</h1>
     <div class="input-group">
       <input type="text" v-model="city" placeholder="请输入城市名" />
       <button @click="getWeatherData">提交</button>
